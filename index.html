@@ -15,7 +15,7 @@
                 background: #031321;
                 font-family: consolas;
             }
-            a {
+            .downloadButton {
                 position: relative;
                 display: inline-block;
                 padding: 15px 30px;
@@ -29,19 +29,19 @@
                 transition: 0.2s;
             }
 
-            a:hover {
+            .downloadButton:hover {
                 color: #255784;
                 background: #2196f3;
                 box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
                 transition-delay: 1s;
             }
 
-            a span {
+            .downloadButton span {
                 position: absolute;
                 display: block;
             }
 
-            a span:nth-child(1){
+            .downloadButton span:nth-child(1){
                 top: 0;
                 left: -100%;
                 width: 100%;
@@ -49,13 +49,13 @@
                 background: linear-gradient(90deg,transparent,#2196f3);
             }
 
-            a:hover span:nth-child(1){
+            .downloadButton:hover span:nth-child(1){
                 left: 100%;
                 transition: 1s;
 
             }
 
-            a span:nth-child(3){
+            .downloadButton span:nth-child(3){
                 bottom: 0;
                 right: -100%;
                 width: 100%;
@@ -63,13 +63,13 @@
                 background: linear-gradient(270deg,transparent,#2196f3);
             }
 
-            a:hover span:nth-child(3){
+            .downloadButton:hover span:nth-child(3){
                 right: 100%;
                 transition: 1s;
                 transition-delay: 0.5s;
             }
 
-            a span:nth-child(2){
+            .downloadButton span:nth-child(2){
                 top: -100%;
                 right: 0;
                 width: 2px;
@@ -77,13 +77,13 @@
                 background: linear-gradient(180deg,transparent,#2196f3);
             }
 
-            a:hover span:nth-child(2){
+            .downloadButton:hover span:nth-child(2){
                 top: 100%;
                 transition: 1s;
                 transition-delay: 0.25s;
             }
 
-            a span:nth-child(4){
+            .downloadButton span:nth-child(4){
                 bottom: -100%;
                 left: 0;
                 width: 2px;
@@ -91,7 +91,7 @@
                 background: linear-gradient(360deg,transparent,#2196f3);
             }
 
-            a:hover span:nth-child(4){
+            .downloadButton:hover span:nth-child(4){
                 bottom: 100%;
                 transition: 1s;
                 transition-delay: 0.75s;
@@ -100,20 +100,20 @@
         </style>
     </head>
     <body>
-        <a href="EDTDeLo.apk">
+        <a class="downloadButton" href="EDTDeLo.apk">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Download EDT De Lo
         </a>
-        <a href="DeezerDeLo.apk">
+        <a class="downloadButton" href="DeezerDeLo.apk">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Download Deezer De Lo
         </a>
-        <a href="https://github.com/LMornand"><img style="width: 100px;" src="githubLogo.png"></a>
+        <a style="margin: 25px" href="https://github.com/LMornand"><img style="width: 100px;" src="githubLogo.png"></a>
     </body>
 </html>
